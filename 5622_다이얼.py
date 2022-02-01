@@ -1,4 +1,4 @@
-a = input()
+a = list(input())
 for i in a:
     if i in ['A','B','C']:
         a[a.index(i)] = 3

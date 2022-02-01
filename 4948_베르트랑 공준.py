@@ -1,3 +1,4 @@
+import sys
 arr = ([False]+[True])*(123456+1)
 arr[1], arr[2] = False, True
 for i in range(3, int((123456*2)**.5)+1):
@@ -10,7 +11,7 @@ for i in range(3, int((123456*2)**.5)+1):
             pass
 while 1:
     ans = 0
-    n = int(input())
+    n = int(sys.stdin.readline())
     if n == 0:
         break
     for i in range(n+1, 2*n+1):
